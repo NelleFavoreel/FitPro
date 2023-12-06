@@ -38,3 +38,61 @@ a {
 	margin-right: 30px;
 	margin-top: 10px;
 }
+#content {
+	margin-top: 30px;
+	background-color: papayawhip;
+	height: 700px;
+}
+#content h1 {
+	text-align: center;
+	padding-top: 60px;
+}
+.buttonHome a {
+	text-decoration: none;
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+	color: black;
+}
+.buttonHome {
+	text-align: center;
+	margin-top: 400px;
+	padding: 0;
+}
+#content2 {
+	display: flex;
+}
+#content2 div {
+	margin: 40px;
+	color: white;
+}
+#content2 h2 {
+	font-size: 20px;
+}
+#content3 {
+	background-color: white;
+	padding-bottom: 30px;
+}
+#content3 h1 {
+	text-align: center;
+	padding-top: 30px;
+}
+.email input {
+	width: 550px;
+	height: 50px;
+	border: none;
+}
+.email {
+	text-align: center;
+	border: 1px solid black;
+}
+#footer {
+	color: black;
+	background-color: white;
+	height: 100px;
+}
+.linkFooter a {
+	text-decoration: none;
+	margin: 3%;
+	color: black;
+}
