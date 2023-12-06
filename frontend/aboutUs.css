@@ -17,7 +17,12 @@
 	display: flex;
 	margin-right: 100px;
 	margin-top: 40px;
+	color: white;
 }
 .buttonsAanbod {
 	margin-top: 90px;
+}
+.buttonsAanbod :hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
 }
