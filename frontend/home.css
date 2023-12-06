@@ -1,0 +1,40 @@
+@import url("https://use.typekit.net/bbw8vfv.css");
+@import url("https://use.typekit.net/bbw8vfv.css");
+body {
+	background-color: #262626;
+}
+h1 {
+	font-family: "amandine", sans-serif;
+}
+h2 {
+	font-family: "stevie-sans", sans-serif;
+	font-weight: 100;
+}
+a {
+	font-family: "stevie-sans", sans-serif;
+	font-weight: 100;
+}
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	color: white;
+}
+.menuDesktop a {
+	text-decoration: none;
+	color: white;
+	margin-left: 30px;
+}
+.menuDesktop a:hover {
+	background-color: papayawhip;
+	border-radius: 20px;
+	color: white;
+}
+.menuDesktop {
+	text-align: right;
+	margin-right: 30px;
+	margin-top: 10px;
+}
