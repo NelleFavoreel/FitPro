@@ -2,6 +2,8 @@
 	color: white;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 300px;
+	margin-top: 40px;
 }
 #content1 h1 {
 	margin-left: 100px;
@@ -25,4 +27,14 @@
 .buttonsAanbod :hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
+}
+.purpleRectangle {
+	width: auto;
+	height: 80px;
+	margin-left: 200px;
+	background-color: #7f5596;
+	border-radius: 100px 0px 0px 0px;
+}
+h1 {
+	margin-top: 0px;
 }
