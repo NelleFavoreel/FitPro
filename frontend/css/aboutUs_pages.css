@@ -4,11 +4,17 @@
 }
 .goBackButton img {
 	color: white;
+	width: 20px;
 }
 .goBackButton {
 	display: flex;
 	margin-top: 50px;
 	margin-left: 50px;
+}
+.goBackButton:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
+	color: white;
 }
 .picture img {
 	width: 100%;
@@ -16,10 +22,10 @@
 }
 
 .pictureText {
-	width: 400px;
+	width: 300px;
 	margin-left: 150px;
 	height: auto;
-	padding: 10px;
+	padding: 20px;
 	margin-top: -400px;
 	position: absolute;
 	background-color: white;
@@ -35,14 +41,13 @@
 }
 .underText img {
 	width: 400px;
-	height: auto;
 	margin-left: 18%;
 	margin-top: 100px;
 }
 .underText p {
 	padding-top: 30px;
 	margin-top: 100px;
-	margin-right: 18%;
+	margin-right: 20%;
 	margin-left: 50px;
 	color: white;
 }

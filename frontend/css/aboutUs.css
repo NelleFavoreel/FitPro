@@ -17,16 +17,38 @@
 .buttonsAanbod a {
 	text-decoration: none;
 	display: flex;
-	margin-right: 100px;
 	margin-top: 40px;
 	color: white;
+	margin-right: 10px;
+}
+.fullBody {
+	display: flex;
+	align-items: flex-end;
+}
+.cardio {
+	display: flex;
+	align-items: flex-end;
+}
+.legs {
+	display: flex;
+	align-items: flex-end;
+}
+.upperBody {
+	display: flex;
+	align-items: flex-end;
 }
 .buttonsAanbod {
 	margin-top: 90px;
+	margin-right: 300px;
 }
 .buttonsAanbod :hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
+}
+.buttonsAanbod img {
+	width: 20px;
+	rotate: 90%;
+	transform: rotate(180deg);
 }
 .purpleRectangle {
 	width: auto;

@@ -1,7 +1,10 @@
 @import url("https://use.typekit.net/bbw8vfv.css");
 @import url("https://use.typekit.net/bbw8vfv.css");
+html,
 body {
 	background-color: #262626;
+	scroll-behavior: smooth;
+	margin: 0;
 }
 h1 {
 	font-family: "amandine", sans-serif;
@@ -30,7 +33,7 @@ p {
 .logo h1 {
 	font-size: 50px;
 	margin: 0;
-	margin-left: 20px;
+	margin-left: 50px;
 }
 .menuDesktop a {
 	text-decoration: none;
@@ -38,13 +41,24 @@ p {
 	margin-left: 30px;
 }
 .menuDesktop a:hover {
-	background-color: papayawhip;
-	border-radius: 20px;
+	text-decoration: underline;
+	text-underline-offset: 8px;
 	color: white;
+}
+.schema {
+	background-color: #797676;
+	border-radius: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.schema:hover {
+	background-color: bisque;
+	text-decoration: none;
+	color: black;
 }
 .menuDesktop {
 	text-align: right;
-	margin-right: 30px;
+	margin-right: 50px;
 	margin-top: 10px;
 }
 #content {
@@ -55,21 +69,27 @@ p {
 	text-align: center;
 	padding-top: 60px;
 	margin-top: 0;
+	font-size: 60px;
 }
 .buttonHome a {
 	text-decoration: none;
-	background-color: white;
 	padding: 20px;
 	border-radius: 20px;
 	color: black;
+}
+.buttonHome a:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
 }
 .buttonHome {
 	text-align: center;
 	margin-top: 400px;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 #content2 {
 	display: flex;
+	margin: 80px;
 }
 #content2 div {
 	margin: 40px;
@@ -77,6 +97,10 @@ p {
 }
 #content2 h2 {
 	font-size: 20px;
+}
+#content2 img {
+	width: 400px;
+	margin-left: 50px;
 }
 #content3 {
 	background-color: white;
@@ -99,12 +123,20 @@ p {
 	color: black;
 	background-color: white;
 	height: 100px;
+	padding-bottom: 20px;
 }
-
+#footer h1 {
+	margin-left: 50px;
+	margin-bottom: 20;
+}
+.linkFooter {
+	margin-bottom: 30px;
+}
 .linkFooter a {
 	text-decoration: none;
 	margin: 3%;
 	color: black;
+	margin-left: 50px;
 }
 
 .experiencesSelf a {
