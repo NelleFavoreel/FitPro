@@ -1,0 +1,59 @@
+.purpleRectangle {
+	width: auto;
+	height: 600px;
+	margin-top: 10px;
+	margin-left: 100px;
+	background-color: #7f5596;
+	border-radius: 300px 0px 0px 300px;
+	display: flex;
+}
+.title h1 {
+	margin-left: 100px;
+	font-weight: 200;
+	margin-top: 90px;
+	color: white;
+}
+.days {
+	display: flex;
+	flex-direction: column;
+	padding-left: 90px;
+	padding-top: 85px;
+}
+
+.days input {
+	border: none;
+	background-color: #7f5596;
+	padding: 16px 32px;
+	margin: 4px 2px;
+	color: white;
+	font-size: 18px;
+}
+.days input:hover,
+.days input:active,
+.days input:focus {
+	text-decoration: underline;
+	text-underline-offset: 8px;
+	color: black;
+}
+.time,
+.group,
+.experience {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+	width: 400px;
+}
+.filter {
+	margin-top: 90px;
+	margin-left: 30%;
+}
+.filter h2 {
+	color: white;
+	font-size: 18px;
+}
+select {
+	background-color: #7f5596;
+	color: white;
+	width: 150px;
+}
