@@ -93,16 +93,16 @@ p {
 }
 #content2 {
 	display: flex;
-	margin-top: 80px;
 	margin-bottom: 80px;
 	justify-content: space-between;
-	margin-left: 50px;
-	margin-right: 50px;
+	width: 100%;
+	align-items: flex-end;
 }
 #content2 div {
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 150px;
+	margin-right: 150px;
 	color: white;
+	margin-top: -450px;
 }
 #content2 h1 {
 	font-size: 40px;
@@ -113,11 +113,12 @@ p {
 }
 #content2 img {
 	width: 400px;
-	margin-top: 30px;
+	margin-top: 80px;
 }
 
 #content3 {
 	background-color: white;
+	margin-top: 200px;
 	padding-bottom: 30px;
 }
 #content3 h1 {
@@ -174,4 +175,22 @@ p {
 .experiencesSelf a:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
+}
+#purpleRectangle {
+	width: 1000px;
+	height: 500px;
+	background-color: #7f5596;
+	border-radius: 0px 300px 300px 0px;
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+}
+.purpleRectangleLeft {
+	background-color: #7f5596;
+	width: auto;
+	margin-left: 400px;
+	height: 600px;
+	margin-top: -650px;
+	margin-bottom: 180px;
+	border-radius: 500px 0 0 500px;
 }
