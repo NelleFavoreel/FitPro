@@ -1,7 +1,26 @@
+.goBackButton a {
+	text-decoration: none;
+	color: white;
+}
+.goBackButton img {
+	color: white;
+	width: 20px;
+}
+.goBackButton {
+	display: flex;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.goBackButton:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
+	color: white;
+}
+
 .purpleRectangle {
 	width: auto;
 	height: 600px;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-left: 100px;
 	background-color: #7f5596;
 	border-radius: 300px 0px 0px 300px;
@@ -14,7 +33,7 @@
 	flex-direction: column;
 	color: white;
 
-	margin-left: 90px; /* Optioneel: Voeg wat ruimte toe aan de linkerkant van de info-container */
+	margin-left: 90px;
 }
 
 form {
@@ -23,18 +42,23 @@ form {
 }
 
 .info div {
-	margin-top: 20px; /* Aangepaste ruimte tussen de formuliervelden */
+	margin-top: 20px;
 }
 
 button.button {
-	margin-top: 20px; /* Aangepaste ruimte boven de knop */
-	background-color: #7f5596;
+	margin-top: 20px;
 	border: none;
 	color: white;
-	padding: 10px 20px;
 	cursor: pointer;
+	margin-top: 30px;
+	background-color: #7f5596;
 }
-
+.button {
+	font-size: 20px;
+}
+.form-control {
+	width: 300px;
+}
 button.button:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px; /* Verander de achtergrondkleur bij het hoveren over de knop */
