@@ -1,0 +1,44 @@
+.purpleRectangle {
+	width: auto;
+	height: 600px;
+	margin-top: 100px;
+	margin-left: 100px;
+	background-color: #7f5596;
+	border-radius: 300px 0px 0px 300px;
+	display: flex;
+	align-items: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	color: white;
+
+	margin-left: 90px; /* Optioneel: Voeg wat ruimte toe aan de linkerkant van de info-container */
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.info div {
+	margin-top: 20px; /* Aangepaste ruimte tussen de formuliervelden */
+}
+
+button.button {
+	margin-top: 20px; /* Aangepaste ruimte boven de knop */
+	background-color: #7f5596;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+button.button:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px; /* Verander de achtergrondkleur bij het hoveren over de knop */
+}
+#footer {
+	margin-top: 100px;
+}

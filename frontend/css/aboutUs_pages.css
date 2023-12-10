@@ -1,3 +1,7 @@
+h1 {
+	font-weight: 200;
+	font-size: 40px;
+}
 .goBackButton a {
 	text-decoration: none;
 	color: white;

@@ -6,6 +6,7 @@
 		<title>Exercises</title>
 		<link rel="stylesheet" href="/frontend/home.css" />
 		<link rel="stylesheet" href="/frontend/css/exercises.css" />
+		<script src="/frontend/scripts/exersises.js" defer></script>
 	</head>
 	<body>
 		<nav>
@@ -24,58 +25,60 @@
 				</div>
 			</div>
 		</nav>
-		<div class="title">
-			<h1>Schema</h1>
-		</div>
-		<div class="purpleRectangle">
-			<div class="days">
-				<label><input type="button" name="sortBy" value="Maandag" /> </label>
-				<label><input type="button" name="sortBy" value="Dinsdag" /> </label>
-				<label><input type="button" name="sortBy" value="Woensdag" /> </label>
-				<label><input type="button" name="sortBy" value="Donderdag" /> </label>
-				<label><input type="button" name="sortBy" value="Vrijdag" /> </label>
-				<label><input type="button" name="sortBy" value="Zaterdag" /> </label>
-				<label><input type="button" name="sortBy" value="Zondag" /> </label>
+		<div class="content">
+			<div class="title">
+				<h1>Schema</h1>
 			</div>
-			<div class="filter">
-				<div class="time">
-					<h2>Hoeveel tijd heb je?</h2>
-					<select>
-						<option value="0">Selecteer tijd:</option>
-						<option value="upperBody">Meer dan een uur tijd</option>
-						<option value="2">Minder dan een uur tijd</option>
-					</select>
+			<div class="purpleRectangle">
+				<div class="days">
+					<label><input type="button" name="sortBy" value="Maandag" /> </label>
+					<label><input type="button" name="sortBy" value="Dinsdag" /> </label>
+					<label><input type="button" name="sortBy" value="Woensdag" /> </label>
+					<label><input type="button" name="sortBy" value="Donderdag" /> </label>
+					<label><input type="button" name="sortBy" value="Vrijdag" /> </label>
+					<label><input type="button" name="sortBy" value="Zaterdag" /> </label>
+					<label><input type="button" name="sortBy" value="Zondag" /> </label>
 				</div>
-				<div class="group">
-					<h2>Wat wil je trainen?</h2>
-					<select>
-						<option value="0">Selecteer groep:</option>
-						<option value="upperBody">Cardio</option>
-						<option value="2">Legs & glutes</option>
-						<option value="2">Full body/option></option>
-						<option value="2">Upper body</option>
-					</select>
-				</div>
-				<div class="experience">
-					<h2>Hoeveel ervaring heb je?</h2>
-					<select>
-						<option value="0">Selecteer ervaring:</option>
-						<option value="upperBody">Beginner</option>
-						<option value="2">Medium</option>
-						<option value="2">Heel ervaren</option>
-					</select>
-				</div>
-				<div class="readyButton">
-					<a href="/frontend/pages/exercisesBegin.html">Start!</a>
+				<div class="filter">
+					<div class="time">
+						<h2>Hoeveel tijd heb je?</h2>
+						<select>
+							<option value="0">Selecteer tijd:</option>
+							<option value="upperBody">Meer dan een uur tijd</option>
+							<option value="2">Minder dan een uur tijd</option>
+						</select>
+					</div>
+					<div class="group">
+						<h2>Wat wil je trainen?</h2>
+						<select>
+							<option value="0">Selecteer groep:</option>
+							<option value="upperBody">Cardio</option>
+							<option value="2">Legs & glutes</option>
+							<option value="2">Full body/option></option>
+							<option value="2">Upper body</option>
+						</select>
+					</div>
+					<div class="experience">
+						<h2>Hoeveel ervaring heb je?</h2>
+						<select>
+							<option value="0">Selecteer ervaring:</option>
+							<option value="upperBody">Beginner</option>
+							<option value="2">Medium</option>
+							<option value="2">Heel ervaren</option>
+						</select>
+					</div>
+					<div class="readyButton">
+						<a id="startButton" href="/frontend/pages/exercisesBegin.html">Start!</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="footer">
-			<h1>Fitpro</h1>
-			<div class="linkFooter">
-				<a href="/frontend/home.html">Home</a>
-				<a href="/frontend/aboutUs.html">Over ons</a>
-				<a href="/frontend/exercises.html">Schema</a>
+			<div id="footer">
+				<h1>Fitpro</h1>
+				<div class="linkFooter">
+					<a href="/frontend/home.html">Home</a>
+					<a href="/frontend/aboutUs.html">Over ons</a>
+					<a href="/frontend/exercises.html">Schema</a>
+				</div>
 			</div>
 		</div>
 	</body>
