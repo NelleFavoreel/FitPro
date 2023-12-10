@@ -1,0 +1,107 @@
+.purpleRectangle {
+	width: auto;
+	height: 600px;
+	margin-top: 10px;
+	margin-right: 300px;
+	background-color: #7f5596;
+	border-radius: 0px 300px 300px 0px;
+	display: flex;
+}
+.title h1 {
+	margin-left: 100px;
+	font-weight: 200;
+	margin-top: 90px;
+	color: white;
+}
+.textRectangle {
+	margin-left: 200px;
+	margin-top: 50px;
+	color: white;
+}
+.textRectangle h1,
+h2 {
+	font-weight: 100;
+	font-size: 20px;
+}
+.textRectangle h1 {
+	font-size: 30px;
+}
+.textRectangle a {
+	color: white;
+	text-decoration: none;
+}
+.buttonBegin {
+	margin-top: 90px;
+}
+.buttonBegin a {
+	font-size: 20px;
+}
+.textRectangle a:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+.purpleRectangle1 {
+	width: auto;
+	height: 300px;
+	margin-top: 10px;
+	margin-right: 200px;
+	background-color: #7f5596;
+	border-radius: 0px 300px 300px 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.purpleRectangle2 {
+	width: auto;
+	height: 300px;
+	margin-top: 10px;
+	margin-left: 200px;
+	background-color: #7f5596;
+	border-radius: 300px 0px 0px 300px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 0;
+	display: flex;
+	align-items: center;
+}
+#begin h1,
+#begin h2 {
+	margin-left: 400px;
+	color: white;
+	margin-top: 30px;
+}
+.organise {
+	display: flex;
+	align-items: center;
+}
+#begin {
+	padding-top: 20px;
+	margin-top: 90px;
+}
+.img img {
+	width: 280px;
+}
+.img {
+	margin-left: 400px;
+}
+.endButton input {
+	border: none;
+	background-color: #262626;
+	padding: 16px 32px;
+	margin: 4px 2px;
+	color: white;
+	font-size: 30px;
+}
+.endButton input:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+.endButton {
+	margin-left: 370px;
+	margin-top: 50px;
+}
+#footer {
+	margin-top: 100px;
+}

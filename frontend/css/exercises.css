@@ -57,3 +57,19 @@ select {
 	color: white;
 	width: 150px;
 }
+.readyButton {
+	margin-top: 70px;
+	margin-left: 20px;
+}
+.readyButton a:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+.readyButton a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+#footer {
+	margin-top: 60px;
+}
