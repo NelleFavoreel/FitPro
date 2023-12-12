@@ -11,13 +11,10 @@ fetch("http://localhost:3000/showreview", {
 })
 	.then((response) => response.json())
 	.then((data) => {
-		// Assuming data is an array of reviews
 		console.log(data);
 		data.forEach((reviewData, index) => {
-			// Create a new Review instance using the data
+			// Create a new Review
 			const review = new Review(reviewData.name, reviewData.age, reviewData.email, reviewData.description);
-
-			// Append the HTML string of the review to the slidesContainer
 
 			console.log(review);
 
