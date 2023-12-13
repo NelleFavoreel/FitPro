@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="/frontend/css/slide.css" />
 		<script src="/frontend/scripts/slide.js" defer></script>
 		<script type="module" src="/frontend/scripts/showReview.js" defer></script>
+		<script src="/frontend/scripts/resievingEmail.js" defer></script>
 	</head>
 	<body>
 		<nav>
@@ -52,10 +53,12 @@
 		<div id="content3">
 			<h1>Blijf op de hoogte</h1>
 			<div class="email">
-				<div class="emailContent">
-					<label for="email">Email:</label>
-					<input class="emailField" type="email" id="email" />
-				</div>
+				<form id="emailContent" action="">
+					<div class="emailContent">
+						<label for="emailField">Email:</label>
+						<input class="emailField" type="email" id="emailField" />
+					</div>
+				</form>
 
 				<div><input class="submitButton" type="submit" value="Submit" /></div>
 			</div>
