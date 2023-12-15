@@ -1,13 +1,45 @@
-//chatGPT not good info
-document.getElementById("startButton").addEventListener("click", function (event) {
-	// Prevent the default link behavior
-	event.preventDefault();
+import Exercise from "./Exercise.js";
 
-	// Add a class to the content container to trigger the smooth slide-out animation
-	document.querySelector(".content").classList.add("slide-out");
+const app = {
+	filteredExercises: [],
+	exercises: [],
+};
 
-	// After a short delay, navigate to the new page
-	setTimeout(function () {
-		window.location.href = event.target.getAttribute("href");
-	}, 500); // Adjust the delay (in milliseconds) to match the transition duration
-});
+function getData() {
+	fetch("http://localhost:3000/showExersises", {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json;charset=utf-8",
+		},
+	})
+		.then((data) => data.json())
+		.then(function (response) {
+			console.log(response);
+			response.items.forEach(function (exercises) {
+				const exercise = new Exercise(exercises.name, exercises.type, exercises.muscle, exercises.equipment, exercises.instructions);
+				app.exercises.push(exercise);
+				// document inpoppen
+			});
+		})
+		.catch(function (error) {
+			console.error("Error fetching data:", error);
+		});
+}
+
+async function mapDifficultyOnServer(filter) {
+	try {
+		const response = await fetch(`http://localhost:3000/mapDifficulty?dificulty=${filter}`);
+		const data = await response.json();
+
+		return data.mappedDifficulty;
+	} catch (error) {
+		console.error("Error fetching difficulty mapping:", error);
+		throw error; // Re-throw the error for further handling
+	}
+}
+
+// Example usage
+const mappedDifficulty = await mapDifficultyOnServer("Beginner");
+console.log(mappedDifficulty);
+
+getData();

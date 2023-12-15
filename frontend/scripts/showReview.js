@@ -1,5 +1,4 @@
-// Assuming you have an element with the class "mySlides fade" where you want to display the reviews
-import Review from "./Review.js";
+import Review from "./review.js";
 
 const slidesContainer = document.querySelector(".slideshow-container");
 
