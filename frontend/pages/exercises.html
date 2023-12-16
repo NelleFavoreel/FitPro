@@ -40,36 +40,40 @@
 					<label><input type="button" name="sortBy" value="Zondag" /> </label>
 				</div>
 				<div class="filter">
-					<div class="time">
-						<h2>Hoeveel tijd heb je?</h2>
-						<select>
-							<option value="0">Selecteer tijd:</option>
-							<option value="upperBody">Meer dan een uur tijd</option>
-							<option value="2">Minder dan een uur tijd</option>
-						</select>
-					</div>
-					<div class="group">
-						<h2>Wat wil je trainen?</h2>
-						<select>
-							<option value="0">Selecteer groep:</option>
-							<option value="upperBody">Cardio</option>
-							<option value="2">Legs & glutes</option>
-							<option value="2">Full body/option></option>
-							<option value="2">Upper body</option>
-						</select>
-					</div>
-					<div class="experience">
-						<h2>Hoeveel ervaring heb je?</h2>
-						<select>
-							<option value="0">Selecteer ervaring:</option>
-							<option value="upperBody">Beginner</option>
-							<option value="2">Medium</option>
-							<option value="2">Heel ervaren</option>
-						</select>
-					</div>
-					<div class="readyButton">
-						<a id="startButton" href="/frontend/pages/exercisesBegin.html">Start!</a>
-					</div>
+					<form id="exerciseFilter">
+						<div class="time">
+							<h2>Hoeveel tijd heb je?</h2>
+							<select id="filterTime" name="filterTime">
+								<option value="">Selecteer tijd:</option>
+								<option value="true">Meer dan een uur tijd</option>
+								<option value="false">Minder dan een uur tijd</option>
+							</select>
+						</div>
+
+						<div class="group">
+							<h2>Wat wil je trainen?</h2>
+							<select id="filterSelect">
+								<option name="filter" value="0">Selecteer groep:</option>
+								<option name="filter" value="Cardio">Cardio</option>
+								<option name="filter" value="legs">Legs & glutes</option>
+								<option name="filter" value="fullBody">Full body/option</option>
+								<option name="filter" value="upperBody">Upper body</option>
+							</select>
+						</div>
+						<div class="experience">
+							<h2>Hoeveel ervaring heb je?</h2>
+							<select id="filterDifficulty">
+								<option value="0">Selecteer ervaring:</option>
+								<option value="beginner">Beginner</option>
+								<option value="intermediate">intermediate</option>
+								<option value="ervaren">Heel ervaren</option>
+							</select>
+						</div>
+						<div class="readyButton">
+							<a id="startButton" href="/frontend/pages/exercisesBegin.html">Start!</a>
+							<button>start</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div id="footer">

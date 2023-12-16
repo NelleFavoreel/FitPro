@@ -1,45 +1,49 @@
-import Exercise from "./Exercise.js";
-
-const app = {
-	filteredExercises: [],
-	exercises: [],
-};
-
-function getData() {
-	fetch("http://localhost:3000/showExersises", {
-		method: "GET",
-		headers: {
-			"Content-Type": "application/json;charset=utf-8",
-		},
+// Fetch data on page load
+fetch("http://localhost:3000/showExercises", {
+	method: "GET",
+	headers: {
+		"Content-Type": "application/json;charset=utf-8",
+	},
+})
+	.then((data) => data.json())
+	.then(function (response) {
+		console.log(response);
+		// Handle the response data as needed, for example, render it on the page.
 	})
-		.then((data) => data.json())
-		.then(function (response) {
-			console.log(response);
-			response.items.forEach(function (exercises) {
-				const exercise = new Exercise(exercises.name, exercises.type, exercises.muscle, exercises.equipment, exercises.instructions);
-				app.exercises.push(exercise);
-				// document inpoppen
-			});
-		})
-		.catch(function (error) {
-			console.error("Error fetching data:", error);
-		});
-}
+	.catch(function (error) {
+		console.error("Error fetching data:", error);
+	});
 
-async function mapDifficultyOnServer(filter) {
+// Add event listener to the form for handling submissions
+const filter = document.querySelector("#exerciseFilter");
+filter.addEventListener("submit", async (event) => {
+	event.preventDefault();
+
+	// Get filter values from the form
+	const filterTime = document.querySelector("#filterTime").value;
+	const filterGroup = document.querySelector("#filterSelect").value;
+	const filterDifficulty = document.querySelector("#filterDifficulty").value;
+
+	// Construct the URL with query parameters for the GET request
+	const url = `http://localhost:3000/showExercises?time=${filterTime}&type=${filterGroup}&difficulty=${filterDifficulty}`;
+
+	// Fetch data based on the filter values
 	try {
-		const response = await fetch(`http://localhost:3000/mapDifficulty?dificulty=${filter}`);
-		const data = await response.json();
+		const response = await fetch(url, {
+			method: "GET",
+			headers: {
+				"Content-Type": "application/json;charset=utf-8",
+			},
+		});
 
-		return data.mappedDifficulty;
+		if (!response.ok) {
+			throw new Error("Server error");
+		}
+
+		const responseData = await response.json();
+		console.log(responseData);
+		// Handle the response data as needed, for example, render it on the page.
 	} catch (error) {
-		console.error("Error fetching difficulty mapping:", error);
-		throw error; // Re-throw the error for further handling
+		console.error("Error submitting form:", error);
 	}
-}
-
-// Example usage
-const mappedDifficulty = await mapDifficultyOnServer("Beginner");
-console.log(mappedDifficulty);
-
-getData();
+});
