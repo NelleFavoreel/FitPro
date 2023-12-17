@@ -1,4 +1,6 @@
 // Fetch data on page load
+import Exercise from "./Exercise.js";
+
 fetch("http://localhost:3000/showExercises", {
 	method: "GET",
 	headers: {
@@ -23,6 +25,7 @@ filter.addEventListener("submit", async (event) => {
 	const filterTime = document.querySelector("#filterTime").value;
 	const filterGroup = document.querySelector("#filterSelect").value;
 	const filterDifficulty = document.querySelector("#filterDifficulty").value;
+	const exerciseContainer = document.querySelector(".textRectangle");
 
 	// Construct the URL with query parameters for the GET request
 	const url = `http://localhost:3000/showExercises?time=${filterTime}&type=${filterGroup}&difficulty=${filterDifficulty}`;
@@ -41,6 +44,26 @@ filter.addEventListener("submit", async (event) => {
 		}
 
 		const responseData = await response.json();
+
+		// Assuming you have an array of exercises in responseData
+		responseData.forEach(function (exercise) {
+			const exerciseInstance = new Exercise(exercise.name, exercise.type, exercise.muscle, exercise.difficulty, exercise.equipment, exercise.instructions);
+
+			// Assuming you want to append each exercise to a container with class "textRectangle"
+			const insertHTML = `
+        <h1>${exerciseInstance.type}</h1>
+        <h2>Hoeveel tijd je hebt</h2>
+        <h2>${exerciseInstance.equipment}</h2>
+        <div class="buttonBegin"><a href="#begin">Starten!</a></div>
+      `;
+
+			// Assuming you want to append each container to the body
+			exerciseContainer.insertAdjacentHTML("beforeend", insertHTML);
+
+			console.log(exerciseInstance);
+			// document inpoppen
+		});
+
 		console.log(responseData);
 		// Handle the response data as needed, for example, render it on the page.
 	} catch (error) {

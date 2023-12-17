@@ -6,6 +6,7 @@
 		<title>Exercises</title>
 		<link rel="stylesheet" href="/frontend/home.css" />
 		<link rel="stylesheet" href="/frontend/css/exercises.css" />
+		<link rel="stylesheet" href="/frontend/css/exercisesBegin.css" />
 		<script type="module" src="/frontend/scripts/exersises.js" defer></script>
 	</head>
 	<body>
@@ -31,13 +32,13 @@
 			</div>
 			<div class="purpleRectangle">
 				<div class="days">
-					<label><input type="button" name="sortBy" value="Maandag" /> </label>
-					<label><input type="button" name="sortBy" value="Dinsdag" /> </label>
-					<label><input type="button" name="sortBy" value="Woensdag" /> </label>
-					<label><input type="button" name="sortBy" value="Donderdag" /> </label>
-					<label><input type="button" name="sortBy" value="Vrijdag" /> </label>
-					<label><input type="button" name="sortBy" value="Zaterdag" /> </label>
-					<label><input type="button" name="sortBy" value="Zondag" /> </label>
+					<label><input type="radio" type="button" name="sortBy" value="Maandag" checked />Maandag</label>
+					<label><input type="radio" type="button" name="sortBy" value="Dinsdag" />Dinsdag</label>
+					<label><input type="radio" type="button" name="sortBy" value="Woensdag" />Woensdag </label>
+					<label><input type="radio" type="button" name="sortBy" value="Donderdag" />Donderdag </label>
+					<label><input type="radio" type="button" name="sortBy" value="Vrijdag" />Vrijdag</label>
+					<label><input type="radio" type="button" name="sortBy" value="Zaterdag" />Zaterdag </label>
+					<label><input type="radio" type="button" name="sortBy" value="Zondag" />Zondag </label>
 				</div>
 				<div class="filter">
 					<form id="exerciseFilter">
@@ -70,11 +71,80 @@
 							</select>
 						</div>
 						<div class="readyButton">
-							<a id="startButton" href="/frontend/pages/exercisesBegin.html">Start!</a>
-							<button>start</button>
+							<button onclick="scrollDown()">Start</button>
 						</div>
+						<script>
+							function scrollDown() {
+								window.scrollBy(0, 900);
+							}
+						</script>
 					</form>
 				</div>
+			</div>
+			<div class="title">
+				<h1>Start van de oefeningen</h1>
+			</div>
+			<div class="purpleRectangleSecond">
+				<div class="textRectangle"></div>
+			</div>
+			<div id="begin">
+				<div class="organise">
+					<div>
+						<h1>Title</h1>
+						<h2>description</h2>
+					</div>
+					<div class="img">
+						<img src="/frontend/svg/cardio.jpeg" alt="" />
+					</div>
+				</div>
+				<div class="purpleRectangle1">
+					<div>
+						<h1>Title</h1>
+						<h2>description</h2>
+					</div>
+					<div class="img">
+						<img src="/frontend/svg/cardio.jpeg" alt="" />
+					</div>
+				</div>
+				<div class="organise">
+					<div>
+						<h1>Title</h1>
+						<h2>description</h2>
+					</div>
+					<div class="img">
+						<img src="/frontend/svg/cardio.jpeg" alt="" />
+					</div>
+				</div>
+				<div class="purpleRectangle2">
+					<div class="text">
+						<h1>Title</h1>
+						<h2>description</h2>
+					</div>
+					<div class="img">
+						<img src="/frontend/svg/cardio.jpeg" alt="" />
+					</div>
+				</div>
+				<div class="organise">
+					<div>
+						<h1>Title</h1>
+						<h2>description</h2>
+					</div>
+					<div class="img">
+						<img src="/frontend/svg/cardio.jpeg" alt="" />
+					</div>
+				</div>
+				<div class="purpleRectangle1">
+					<div class="text">
+						<h1>Title</h1>
+						<h2>description</h2>
+					</div>
+					<div class="img">
+						<img src="/frontend/svg/cardio.jpeg" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="endButton">
+				<label><input type="button" name="sortBy" value="Einde" /> </label>
 			</div>
 			<div id="footer">
 				<h1>Fitpro</h1>

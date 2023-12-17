@@ -29,16 +29,26 @@ h1 {
 	border: none;
 	background-color: #7f5596;
 	padding: 16px 32px;
-	margin: 4px 2px;
+	margin-top: 50px;
 	color: white;
 	font-size: 18px;
 }
-.days input:hover,
-.days input:active,
-.days input:focus {
+label {
+	position: relative;
+	cursor: pointer;
+	transition: color 0.3s, text-decoration 0.3s; /* Add smooth transitions */
+	font-size: 18px;
+	color: white;
+	margin: 20px;
+}
+label:hover,
+input[type="radio"]:checked + label {
 	text-decoration: underline;
 	text-underline-offset: 8px;
-	color: black;
+	color: white;
+}
+input[type="radio"] {
+	display: none;
 }
 .time,
 .group,
@@ -66,14 +76,15 @@ select {
 	margin-top: 70px;
 	margin-left: 20px;
 }
-.readyButton a:hover {
+.readyButton button:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
 }
-.readyButton a {
+.readyButton button {
 	text-decoration: none;
-	color: white;
+	background-color: #7f5596;
 	font-size: 20px;
+	color: white;
 }
 #footer {
 	margin-top: 60px;

@@ -1,5 +1,5 @@
 export default class Exercise {
-	constructor(name, type, muscle, equipment, instructions) {
+	constructor(name, type, muscle, equipment, difficulty, instructions) {
 		this.name = name;
 		this.type = type;
 		this.muscle = muscle;
