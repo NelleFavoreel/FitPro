@@ -11,6 +11,7 @@ h1 {
 	background-color: #7f5596;
 	border-radius: 0px 300px 300px 0px;
 	display: flex;
+	flex-direction: column;
 }
 .title h1 {
 	margin-left: 100px;
@@ -31,17 +32,28 @@ h2 {
 .textRectangle h1 {
 	font-size: 30px;
 }
-.textRectangle a {
+.countExercises {
+	display: flex;
+	align-items: center;
+}
+span {
+	margin-left: 40px;
+	font-size: 20px;
+	font-family: "stevie-sans", sans-serif;
+}
+
+.buttonBegin a {
 	color: white;
 	text-decoration: none;
 }
 .buttonBegin {
 	margin-top: 90px;
+	margin-left: 200px;
 }
 .buttonBegin a {
 	font-size: 20px;
 }
-.textRectangle a:hover {
+.buttonBegin a:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
 }
@@ -73,10 +85,15 @@ h2 {
 }
 #begin h1,
 #begin h2 {
-	margin-left: 400px;
+	margin-left: 200px;
 	color: white;
 	margin-top: 30px;
 }
+#begin h2 {
+	font-weight: 100;
+	font-size: 17px;
+}
+
 .organise {
 	display: flex;
 	align-items: center;
@@ -90,6 +107,8 @@ h2 {
 }
 .img {
 	margin-left: 400px;
+	margin-right: 10%;
+	margin-top: 30px;
 }
 .endButton input {
 	border: none;
@@ -104,7 +123,7 @@ h2 {
 	text-underline-offset: 8px;
 }
 .endButton {
-	margin-left: 370px;
+	margin-left: 150px;
 	margin-top: 50px;
 }
 #footer {

@@ -36,10 +36,13 @@ h1 {
 label {
 	position: relative;
 	cursor: pointer;
-	transition: color 0.3s, text-decoration 0.3s; /* Add smooth transitions */
 	font-size: 18px;
 	color: white;
-	margin: 20px;
+	margin: 17px;
+}
+label {
+	font-size: 20px;
+	font-family: "stevie-sans", sans-serif;
 }
 label:hover,
 input[type="radio"]:checked + label {
@@ -73,19 +76,23 @@ select {
 	width: 150px;
 }
 .readyButton {
-	margin-top: 70px;
-	margin-left: 20px;
+	margin-top: 20px;
+	margin-left: 5px;
+	background-color: #7f5596;
 }
 .readyButton button:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
 }
-.readyButton button {
-	text-decoration: none;
-	background-color: #7f5596;
-	font-size: 20px;
-	color: white;
-}
 #footer {
 	margin-top: 60px;
+}
+.readyButton {
+	background-color: #7f5596;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
 }

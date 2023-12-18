@@ -71,7 +71,7 @@
 							</select>
 						</div>
 						<div class="readyButton">
-							<button onclick="scrollDown()">Start</button>
+							<button class="readyButton" onclick="scrollDown()">Start</button>
 						</div>
 						<script>
 							function scrollDown() {
@@ -85,64 +85,20 @@
 				<h1>Start van de oefeningen</h1>
 			</div>
 			<div class="purpleRectangleSecond">
-				<div class="textRectangle"></div>
-			</div>
-			<div id="begin">
-				<div class="organise">
-					<div>
-						<h1>Title</h1>
-						<h2>description</h2>
-					</div>
-					<div class="img">
-						<img src="/frontend/svg/cardio.jpeg" alt="" />
+				<div class="textRectangle">
+					<h1>De oefening gaat zo van start</h1>
+					<h2>Doe elke oefeing 3 keer met elke keer 12 reps.</h2>
+					<div class="countExercises">
+						<h2>Hoeveelheid ofeningen:</h2>
+						<span id="exerciseCount">0</span>
 					</div>
 				</div>
-				<div class="purpleRectangle1">
-					<div>
-						<h1>Title</h1>
-						<h2>description</h2>
-					</div>
-					<div class="img">
-						<img src="/frontend/svg/cardio.jpeg" alt="" />
-					</div>
-				</div>
-				<div class="organise">
-					<div>
-						<h1>Title</h1>
-						<h2>description</h2>
-					</div>
-					<div class="img">
-						<img src="/frontend/svg/cardio.jpeg" alt="" />
-					</div>
-				</div>
-				<div class="purpleRectangle2">
-					<div class="text">
-						<h1>Title</h1>
-						<h2>description</h2>
-					</div>
-					<div class="img">
-						<img src="/frontend/svg/cardio.jpeg" alt="" />
-					</div>
-				</div>
-				<div class="organise">
-					<div>
-						<h1>Title</h1>
-						<h2>description</h2>
-					</div>
-					<div class="img">
-						<img src="/frontend/svg/cardio.jpeg" alt="" />
-					</div>
-				</div>
-				<div class="purpleRectangle1">
-					<div class="text">
-						<h1>Title</h1>
-						<h2>description</h2>
-					</div>
-					<div class="img">
-						<img src="/frontend/svg/cardio.jpeg" alt="" />
-					</div>
+				<div class="buttonBegin">
+					<a href="#begin">Start!</a>
 				</div>
 			</div>
+
+			<div id="begin"></div>
 			<div class="endButton">
 				<label><input type="button" name="sortBy" value="Einde" /> </label>
 			</div>

@@ -25,7 +25,8 @@ filter.addEventListener("submit", async (event) => {
 	const filterTime = document.querySelector("#filterTime").value;
 	const filterGroup = document.querySelector("#filterSelect").value;
 	const filterDifficulty = document.querySelector("#filterDifficulty").value;
-	const exerciseContainer = document.querySelector(".textRectangle");
+	const exerciseContainer = document.querySelector("#begin");
+	const exerciseCountElement = document.querySelector("#exerciseCount");
 
 	// Construct the URL with query parameters for the GET request
 	const url = `http://localhost:3000/showExercises?time=${filterTime}&type=${filterGroup}&difficulty=${filterDifficulty}`;
@@ -45,21 +46,27 @@ filter.addEventListener("submit", async (event) => {
 
 		const responseData = await response.json();
 
-		// Assuming you have an array of exercises in responseData
+		// Update exercise count
+		const exerciseCount = responseData.length;
+		exerciseCountElement.textContent = exerciseCount;
+
+		// showing exercises
 		responseData.forEach(function (exercise) {
 			const exerciseInstance = new Exercise(exercise.name, exercise.type, exercise.muscle, exercise.difficulty, exercise.equipment, exercise.instructions);
-
 			// Assuming you want to append each exercise to a container with class "textRectangle"
 			const insertHTML = `
-        <h1>${exerciseInstance.type}</h1>
-        <h2>Hoeveel tijd je hebt</h2>
-        <h2>${exerciseInstance.equipment}</h2>
-        <div class="buttonBegin"><a href="#begin">Starten!</a></div>
+			<div class="organise">
+			<div>
+				<h1>${exercise.name}</h1>
+				<h2>${exercise.instructions}</h2>
+			</div>
+			<div class="img">
+				<img src="/frontend/svg/cardio.jpeg" alt="" />
+			</div>
+		</div>
       `;
-
 			// Assuming you want to append each container to the body
 			exerciseContainer.insertAdjacentHTML("beforeend", insertHTML);
-
 			console.log(exerciseInstance);
 			// document inpoppen
 		});
