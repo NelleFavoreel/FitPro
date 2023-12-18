@@ -25,34 +25,22 @@ h1 {
 	padding-top: 85px;
 }
 
-.days input {
-	border: none;
-	background-color: #7f5596;
-	padding: 16px 32px;
-	margin-top: 50px;
-	color: white;
-	font-size: 18px;
-}
 label {
 	position: relative;
 	cursor: pointer;
-	font-size: 18px;
-	color: white;
-	margin: 17px;
-}
-label {
 	font-size: 20px;
 	font-family: "stevie-sans", sans-serif;
-}
-label:hover,
-input[type="radio"]:checked + label {
-	text-decoration: underline;
-	text-underline-offset: 8px;
+	margin: 17px;
 	color: white;
 }
-input[type="radio"] {
-	display: none;
+
+/* Ensure that the label is underlined when the associated radio button is checked or on hover */
+input[type="radio"]:checked + label,
+label:hover {
+	text-decoration: underline;
+	text-underline-offset: 8px;
 }
+
 .time,
 .group,
 .experience {

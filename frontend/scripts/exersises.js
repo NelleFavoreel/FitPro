@@ -71,14 +71,50 @@ filter.addEventListener("submit", async (event) => {
 			// document inpoppen
 		});
 
-		showPopupButton.addEventListener("click", () => {
-			alert("Goed gedaan, je bent klaar!");
-			window.scrollTo(0, 0); // Scroll to the top of the page
-		});
-
 		console.log(responseData);
 		// Handle the response data as needed, for example, render it on the page.
 	} catch (error) {
 		console.error("Error submitting form:", error);
+	}
+});
+// Get the current day from the radio buttons
+const getCurrentDay = () => {
+	const checkedRadioButton = document.querySelector('input[name="sortBy"]:checked');
+	return checkedRadioButton ? checkedRadioButton.value : null;
+};
+
+// Function to get the next day
+const getNextDay = (currentDay) => {
+	const days = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+	const currentIndex = days.indexOf(currentDay);
+	const nextIndex = (currentIndex + 1) % days.length;
+	return days[nextIndex];
+};
+
+// Add event listener to the "Einde" button for scrolling to the next day
+const showPopupButton = document.getElementById("showPopupButton");
+
+showPopupButton.addEventListener("click", () => {
+	alert("Goed gedaan, je bent klaar!");
+
+	const currentDay = getCurrentDay();
+	console.log("Current day:", currentDay);
+
+	if (currentDay) {
+		const nextDay = getNextDay(currentDay);
+		console.log("Next day:", nextDay);
+
+		const nextDaySection = document.getElementById(nextDay);
+		console.log("Next day section:", nextDaySection);
+
+		if (nextDaySection) {
+			nextDaySection.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+			});
+			window.scrollTo(0, 0);
+		} else {
+			console.error("Next day section not found");
+		}
 	}
 });
