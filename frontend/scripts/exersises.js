@@ -71,6 +71,11 @@ filter.addEventListener("submit", async (event) => {
 			// document inpoppen
 		});
 
+		showPopupButton.addEventListener("click", () => {
+			alert("Goed gedaan, je bent klaar!");
+			window.scrollTo(0, 0); // Scroll to the top of the page
+		});
+
 		console.log(responseData);
 		// Handle the response data as needed, for example, render it on the page.
 	} catch (error) {
