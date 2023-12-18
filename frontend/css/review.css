@@ -16,7 +16,9 @@
 	text-underline-offset: 8px;
 	color: white;
 }
-
+.emailReview input {
+	width: 400px;
+}
 .purpleRectangle {
 	width: auto;
 	height: 600px;

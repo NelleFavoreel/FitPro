@@ -12,7 +12,6 @@ fetch("http://localhost:3000/showreview", {
 	.then((data) => {
 		console.log(data);
 		data.forEach((reviewData, index) => {
-			// Create a new Review
 			const review = new Review(reviewData.name, reviewData.age, reviewData.email, reviewData.description);
 
 			console.log(review);
@@ -31,6 +30,8 @@ fetch("http://localhost:3000/showreview", {
 
 			slidesContainer.insertAdjacentHTML("beforeend", reviewHTML);
 		});
+
+		showSlides(1);
 	})
 	.catch((error) => {
 		console.error(error);
