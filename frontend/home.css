@@ -197,3 +197,9 @@ p {
 	margin-bottom: 150px;
 	border-radius: 500px 0 0 500px;
 }
+.closeButton {
+	cursor: pointer;
+}
+button.closeButton {
+	margin-left: 70px;
+}

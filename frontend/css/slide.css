@@ -1,7 +1,9 @@
 * {
 	box-sizing: border-box;
 }
-
+.closeButton {
+	margin-left: 70px;
+}
 /* Slideshow container */
 .slideshow-container {
 	position: relative;
@@ -57,7 +59,10 @@
 	margin-left: 100px;
 	padding-top: 100px;
 }
-
+.text button {
+	margin-left: 70%;
+	margin-top: 70px;
+}
 /* Number text (1/3 etc) */
 .numbertext {
 	color: #f2f2f2;
