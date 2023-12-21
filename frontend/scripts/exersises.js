@@ -52,7 +52,7 @@ filter.addEventListener("submit", async (event) => {
 
 		// showing exercises
 		responseData.forEach(function (exercise) {
-			const exerciseInstance = new Exercise(exercise.name, exercise.type, exercise.muscle, exercise.difficulty, exercise.equipment, exercise.instructions);
+			const exerciseInstance = new Exercise(exercise.name, exercise.type, exercise.muscle, exercise.difficulty, exercise.equipment, exercise.instructions, exercise.image);
 			// Assuming you want to append each exercise to a container with class "textRectangle"
 			const insertHTML = `
 			<div class="organise">
@@ -61,7 +61,7 @@ filter.addEventListener("submit", async (event) => {
 				<h2>${exercise.instructions}</h2>
 			</div>
 			<div class="img">
-				<img src="/frontend/svg/cardio.jpeg" alt="" />
+				<img src="${exercise.image}" alt="" />
 			</div>
 		</div>
       `;
