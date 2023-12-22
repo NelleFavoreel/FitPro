@@ -1,5 +1,5 @@
 // Fetch data on page load
-import Exercise from "Exercise.js";
+import Exercise from "./Exercise.js";
 
 fetch("http://localhost:3000/showExercises", {
 	method: "GET",
