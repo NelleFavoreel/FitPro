@@ -11,5 +11,7 @@ This is my website. It is a platform with a schedule for various sports exercise
 
 To have everything functioning properly, you need to start 'nodemon index.js' in the backend first. Otherwise, no data will be retrieved from the database.
 
+## Testing exercises
 
-Enjoy :)
+If you want to test, focus on sorting by 'more than an hour', 'upper body', and 'beginner'. Because that's where most exercises are located. There are too many exercises to include all of them in the database, so I mainly focused on these categories.
+
