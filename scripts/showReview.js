@@ -1,4 +1,4 @@
-import Review from "Review.js";
+import Review from "./review.js";
 
 const slidesContainer = document.querySelector(".slideshow-container");
 
